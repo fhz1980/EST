@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>980</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>980</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>智能电力监督培训系统</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>img/Nicola.png</normaloff>img/Nicola.png</iconset>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>24</width>
+    <height>24</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,5,2">
+    <item>
+     <widget class="QGroupBox" name="cameraBox">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>1</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>211</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>211</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="title">
+       <string> 摄 像 头 </string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>2</number>
+       </property>
+       <property name="leftMargin">
+        <number>5</number>
+       </property>
+       <property name="topMargin">
+        <number>2</number>
+       </property>
+       <property name="rightMargin">
+        <number>5</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="videoBox">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>1</horstretch>
+        <verstretch>1</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="title">
+       <string> 画 面 </string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <property name="leftMargin">
+        <number>5</number>
+       </property>
+       <property name="topMargin">
+        <number>2</number>
+       </property>
+       <property name="rightMargin">
+        <number>5</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
+       <property name="spacing">
+        <number>2</number>
+       </property>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="infoBox">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>1</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>211</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>211</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="title">
+       <string> 信 息 </string>
+      </property>
+      <widget class="QLabel" name="displayLabel">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>60</y>
+         <width>180</width>
+         <height>120</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="commentLabel">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>30</y>
+         <width>100</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>980</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="setting">
+    <property name="title">
+     <string>设置</string>
+    </property>
+    <addaction name="addCamera"/>
+    <addaction name="addModel"/>
+    <addaction name="connection"/>
+    <addaction name="deleteResourse"/>
+    <addaction name="quit"/>
+   </widget>
+   <widget class="QMenu" name="tools">
+    <property name="title">
+     <string>工具</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="query">
+    <property name="title">
+     <string>查询</string>
+    </property>
+    <addaction name="infractionQuery"/>
+   </widget>
+   <addaction name="setting"/>
+   <addaction name="query"/>
+   <addaction name="tools"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="addCamera">
+   <property name="text">
+    <string>添加摄像头</string>
+   </property>
+  </action>
+  <action name="infractionQuery">
+   <property name="text">
+    <string>违规查询</string>
+   </property>
+  </action>
+  <action name="addModel">
+   <property name="text">
+    <string>添加模型</string>
+   </property>
+  </action>
+  <action name="connection">
+   <property name="text">
+    <string>匹配连接</string>
+   </property>
+  </action>
+  <action name="deleteResourse">
+   <property name="text">
+    <string>删除资源</string>
+   </property>
+  </action>
+  <action name="quit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

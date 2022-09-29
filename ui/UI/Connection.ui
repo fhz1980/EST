@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Connection</class>
+ <widget class="QWidget" name="Connection">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>356</width>
+    <height>70</height>
+   </rect>
+  </property>
+  <widget class="QComboBox" name="cameraBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>135</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="modelBox">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>10</y>
+     <width>130</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="statusBox">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>10</y>
+     <width>30</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>开</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="commentEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>330</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

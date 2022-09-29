@@ -1,0 +1,14 @@
+#train: G:/dataset/VOC2028/labels/train.txt  # 118287 images
+#val: G:/dataset/VOC2028/labels/val.txt  # 5000 images
+#test: G:/dataset/VOC2028/labels/test.txt  # 20288 of 40670 images, submit to https://competitions.codalab.org/competitions/20794
+#train: G:\dataset\VOCdevkit-yolo\VOC2012\images\train  # 118287 images
+#val: G:\dataset\VOCdevkit-yolo\VOC2012\images\val  # 5000 images
+#test: G:\dataset\VOCdevkit-yolo\VOC2012\images\test # 20288 of 40670 images, submit to https://competitions.codalab.org/competitions/20794
+train: G:/dataset/eleCheckv7/images/train  # 118287 images
+val: G:/dataset/eleCheckv7/images/val # 5000 images
+test: G:/dataset/eleCheckv7/images/test # 20288 of 40670 images, submit to https://competitions.codalab.org/competitions/20794
+
+# number of classes
+nc: 2
+# class names
+names: ['eleHead','eleCheck']
